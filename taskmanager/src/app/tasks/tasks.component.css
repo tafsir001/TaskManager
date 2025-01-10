@@ -1,0 +1,25 @@
+.custom-select {
+    background-color: transparent; /* Default state */
+    color: black; /* Text color */
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-select:focus {
+    background-color: #333; /* Gray background when dropdown is expanded */
+    color: black;
+  }
+  
+  .custom-select:focus:not([value=""]) {
+    background-color: transparent; /* Transparent when a selection is made */
+  }
+  
+  .custom-select option {
+    background-color: #f5f5f5; /* Background for dropdown options */
+    color: black; /* Ensure visibility of option text */
+  }
+  
+  .custom-select option:checked {
+    background-color: transparent; /* Transparent for the selected option */
+    color: black;
+  }
+  
